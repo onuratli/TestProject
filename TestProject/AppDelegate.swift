@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // lvc olarak tanımladığımız şey ise, aşağıdaki slidemenucontroler'ın içine atacağımız ve onun da belirttiği üzere "leftmenuviewcontroller"dır. ben buraya onurviewcontroller'da yazabilirdim. Hangi viewcontroller'ın senin solda tıkladığında açılacak viewcontroller'ın ise, onu yazacaksın. zaten mavi ve kırmızı kullanmamın nedeni bu.
+        
+        
+        let navigationBarAppearance = UINavigationBar.appearance()
+        navigationBarAppearance.tintColor = UIColor.blackColor()
+        let lvc = LeftViewController()
+
+        let navController = UINavigationController(rootViewController: lvc.homeViewController)
+        
+        // burada da mainviewcontroller'ı oluşturduk. ve bu oluşturduğumuz HomeViewController sınıfından türemiş değişkeni yine SlideMenuController'ın içine koyuyoruz. 
+        
+        //let mainViewController = HomeViewController()
+        let slideMenuController = SlideMenuController(mainViewController: navController, leftMenuViewController: lvc)
+        
+        // bunlar ise adı üzerinde rootviewController, yani senin aslında main viewcontrollerını belirliyor. biz aşağıdaa slideview controller yerine mainviewcontroller yazarsak; mainviewcontrollerı çalıştırır.
+        
+        
+        self.window?.rootViewController = slideMenuController
+        self.window?.makeKeyAndVisible()
+
         return true
     }
 

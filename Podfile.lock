@@ -1,0 +1,16 @@
+PODS:
+  - Alamofire (3.1.5)
+  - Material (1.30.2)
+  - SlideMenuControllerSwift (2.0.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.1)
+  - Material (~> 1.30)
+  - SlideMenuControllerSwift (~> 2.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  Material: 0fab7c03df67f778716b0c1eed28c4d8562ccde3
+  SlideMenuControllerSwift: 9dcae36265e14c4f42e729f212463beb60d2cf96
+
+COCOAPODS: 0.39.0
