@@ -11,7 +11,7 @@ import UIKit
 class LeftViewController: UIViewController {
 
     var menutableView: UITableView = UITableView()
-    var menuItems:[String] = ["MrzKart Nedir ?" , "Kurallar", "Hediyeler", "Bildirimler"]
+    var menuItems:[String] = ["MrzKart Nedir ?" , "Kurallar", "Hediyeler","Başvuru" , "Katılım Koşulları" ,"İletişim"]
     var homeViewController = HomeViewController()
     override func viewDidLoad() {
         
@@ -96,6 +96,8 @@ extension LeftViewController:UITableViewDataSource, UITableViewDelegate
             vc = GiftViewController()
         case "3":
             self.presentViewController(CardViewController(), animated: true, completion: nil)
+        case "5":
+            self.presentViewController(ContactViewController(), animated: true, completion: nil)
         default:
             self.presentViewController(CardViewController(), animated: true, completion: nil)
         }

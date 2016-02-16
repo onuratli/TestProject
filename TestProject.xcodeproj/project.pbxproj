@@ -15,6 +15,8 @@
 		D71F56AE1C68F93E0020E946 /* PlatinumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F56AD1C68F93E0020E946 /* PlatinumViewController.swift */; };
 		D71F56B01C68F9910020E946 /* BusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F56AF1C68F9910020E946 /* BusinessViewController.swift */; };
 		D72BF4E01C6CE2EF00E2EB96 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72BF4DF1C6CE2EF00E2EB96 /* CardType.swift */; };
+		D75946791C7326A2005BEE4A /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75946781C7326A2005BEE4A /* ContactViewController.swift */; };
+		D759467B1C7328DF005BEE4A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D759467A1C7328DF005BEE4A /* MapKit.framework */; };
 		D77D58491C64EF3200CBFBF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D58481C64EF3200CBFBF7 /* AppDelegate.swift */; };
 		D77D584B1C64EF3200CBFBF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D584A1C64EF3200CBFBF7 /* ViewController.swift */; };
 		D77D584E1C64EF3200CBFBF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77D584C1C64EF3200CBFBF7 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 		D71F56AD1C68F93E0020E946 /* PlatinumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatinumViewController.swift; sourceTree = "<group>"; };
 		D71F56AF1C68F9910020E946 /* BusinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessViewController.swift; sourceTree = "<group>"; };
 		D72BF4DF1C6CE2EF00E2EB96 /* CardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
+		D75946781C7326A2005BEE4A /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		D759467A1C7328DF005BEE4A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D77D58451C64EF3200CBFBF7 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77D58481C64EF3200CBFBF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77D584A1C64EF3200CBFBF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D759467B1C7328DF005BEE4A /* MapKit.framework in Frameworks */,
 				E35C23061FFF1DDE8454BA43 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +79,7 @@
 		B31BD8686DB37D242C39287C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D759467A1C7328DF005BEE4A /* MapKit.framework */,
 				9D24E2985E7B7A5AFB77F5F8 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -133,6 +139,7 @@
 				D70591F41C68B0EE0051CA67 /* RulesViewController.swift */,
 				D70591F61C68B37E0051CA67 /* GiftViewController.swift */,
 				D70271E31C68CCC000CC7C5D /* NotificationViewController.swift */,
+				D75946781C7326A2005BEE4A /* ContactViewController.swift */,
 			);
 			path = TestProject;
 			sourceTree = "<group>";
@@ -260,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D70591F51C68B0EE0051CA67 /* RulesViewController.swift in Sources */,
+				D75946791C7326A2005BEE4A /* ContactViewController.swift in Sources */,
 				D77D585B1C64F1FE00CBFBF7 /* LeftViewController.swift in Sources */,
 				D71F56AE1C68F93E0020E946 /* PlatinumViewController.swift in Sources */,
 				D77D584B1C64EF3200CBFBF7 /* ViewController.swift in Sources */,
