@@ -21,7 +21,14 @@ class RulesViewController: UIViewController {
         menuButton?.frame = CGRect(x: 10, y: 10, width: self.view.frame.width, height: 30)
         menuButton?.setTitle("Kurallar", forState: UIControlState.Normal)
         self.view.addSubview(menuButton!)
-        self.view.backgroundColor = UIColor.brownColor()
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "background")?.drawInRect(self.view.bounds)
+        
+        var image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
+        
+        self.view.backgroundColor = UIColor(patternImage: image)
         self.navigationItem.title = "Kurallar"
         RulesTableview.frame = CGRect(x: 40, y: 50, width: self.view.frame.width, height: self.view.frame.height)
         
@@ -50,6 +57,11 @@ class RulesViewController: UIViewController {
         iconView.frame = CGRect(x: 40, y: 0, width: 40, height: 40)
         self.view.addSubview(iconView)
         
+        let navigationBgColor = UIColor(red: 59, green: 175, blue: 218)
+        navigationController!.navigationBar.barTintColor = navigationBgColor
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         
     }
 
@@ -88,7 +100,7 @@ extension RulesViewController:UITableViewDataSource, UITableViewDelegate
         let menu:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
         menu.textLabel?.text = menuItems[indexPath.row]
         menu.backgroundColor = UIColor.clearColor()
-        menu.textLabel?.textColor = UIColor.whiteColor()
+        menu.textLabel?.textColor = UIColor.blackColor()
         
         
         
@@ -151,23 +163,31 @@ extension RulesViewController:UITableViewDataSource, UITableViewDelegate
         
         print(menuItems[indexPath.row] +  "(menuItems[indexPath])")
         
-        
+        var vc = UIViewController()
+
         let selectedIndex = "\(indexPath.row)"
         switch selectedIndex {
             
         case "0":
-            self.navigationController?.pushViewController(CardViewController(), animated: true)
+            vc = CardViewController()
+            //self.navigationController?.pushViewController(CardViewController(), animated: true)
         case "1":
-            self.presentViewController(GoldViewController(), animated: true, completion: nil)
+            vc = GoldViewController()
+            //self.presentViewController(GoldViewController(), animated: true, completion: nil)
         case "2":
-            self.presentViewController(BusinessViewController(), animated: true, completion: nil)
+            vc = BusinessViewController()
+            //self.presentViewController(BusinessViewController(), animated: true, completion: nil)
         case "3":
-            self.presentViewController(PlatinumViewController(), animated: true, completion: nil)
+            vc = PlatinumViewController()
+            //self.presentViewController(PlatinumViewController(), animated: true, completion: nil)
         default:
-            self.presentViewController(ClassicViewController(), animated: true, completion: nil)
+            vc = ClassicViewController()
+            //self.presentViewController(ClassicViewController(), animated: true, completion: nil)
         }
         
         print("seçilen \(indexPath.row)")
+        self.navigationController?.pushViewController(vc, animated: true)
+
         
     }
     

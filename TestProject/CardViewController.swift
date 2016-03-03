@@ -5,7 +5,6 @@
 //  Created by Onur Atlı on 09/02/16.
 //  Copyright © 2016 Onur Atlı. All rights reserved.
 //  İdol ©  Ali Ersöz
-
 //
 
 import UIKit
@@ -44,7 +43,7 @@ class CardViewController: UIViewController , UIScrollViewDelegate{
         
         
         UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "menuBg")?.drawInRect(self.view.bounds)
+        UIImage(named: "background")?.drawInRect(self.view.bounds)
         
         var image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
         
@@ -67,15 +66,12 @@ class CardViewController: UIViewController , UIScrollViewDelegate{
            statuTitle.textColor = MaterialColor.blue.darken1
            statuTitle.font = RobotoFont.mediumWithSize(15)
            statuView.titleLabel = statuTitle
-           
-           
-           
-           
+        
            
            let statuLabel: UILabel = UILabel()
            statuLabel.text = contentArray[index]
            statuLabel.numberOfLines = 0
-           statuView.detailLabel = statuLabel
+           statuView.detailView = statuLabel
            
            
            self.containerView.addSubview(statuView)
@@ -85,38 +81,16 @@ class CardViewController: UIViewController , UIScrollViewDelegate{
            statuView.divider  = false
            statuView.layer.cornerRadius = 5
            height += 100
-           print(titleArray[index])
+           print("Yüseklik " , statuView.layer.frame.height)
         
 
        }
-
-        
-        
-        
-
-        
-        
-        
-        
-        
-        
-        
-        
-//        for var index = 0; index < 3; ++index {
-//            print("Özellik \(ItemArray[index].gecisBedeli)")
-//        }
-        
-        
-        
-        
-        // Do any additional setup after loading the view.
-    }
+}
     
 
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func viewDidLayoutSubviews() {
@@ -125,15 +99,8 @@ class CardViewController: UIViewController , UIScrollViewDelegate{
         scrollView.frame = view.bounds
         containerView.frame = self.view.bounds
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
     private func prepareView() {
         //self.view.backgroundColor = MaterialColor.deepOrange
     }
@@ -159,7 +126,7 @@ class CardViewController: UIViewController , UIScrollViewDelegate{
         let detailLabel: UILabel = UILabel()
         detailLabel.text = " - "
         detailLabel.numberOfLines = 0
-        cardView.detailLabel = detailLabel
+        cardView.detailView = detailLabel
         
         let GeciscardView: CardView = CardView()
 
@@ -177,7 +144,7 @@ class CardViewController: UIViewController , UIScrollViewDelegate{
         let gecisBedeli: UILabel = UILabel()
         gecisBedeli.text = " - "
         gecisBedeli.numberOfLines = 0
-        GeciscardView.detailLabel = gecisBedeli
+        GeciscardView.detailView = gecisBedeli
         
         print("array countu", ItemArray.count)
         
@@ -236,7 +203,7 @@ class CardViewController: UIViewController , UIScrollViewDelegate{
         let hediyeLabel: UILabel = UILabel()
         hediyeLabel.text = " İç Hat; 2 TL  Dış Hat; 5 TL "
         hediyeLabel.numberOfLines = 0
-        biletHediyeView.detailLabel = hediyeLabel
+        biletHediyeView.detailView = hediyeLabel
 
         
         view.addSubview(biletHediyeView)
@@ -269,7 +236,7 @@ class CardViewController: UIViewController , UIScrollViewDelegate{
         let statuLabel: UILabel = UILabel()
         statuLabel.text = " - "
         statuLabel.numberOfLines = 0
-        statuView.detailLabel = statuLabel
+        statuView.detailView = statuLabel
         
         
         view.addSubview(statuView)
@@ -303,7 +270,7 @@ class CardViewController: UIViewController , UIScrollViewDelegate{
             let xstatuLabel: UILabel = UILabel()
             xstatuLabel.text = "selam"
             xstatuLabel.numberOfLines = 0
-            xstatuView.detailLabel = xstatuLabel
+            xstatuView.detailView = xstatuLabel
             
             
             view.addSubview(xstatuView)
@@ -344,7 +311,7 @@ class CardViewController: UIViewController , UIScrollViewDelegate{
         detailLabel.text = "Beautiful Material Design"
         detailLabel.textColor = MaterialColor.white
         detailLabel.numberOfLines = 0
-        cardView.detailLabel = detailLabel
+        cardView.detailView = detailLabel
         
         // Favorite button.
         let img1: UIImage? = UIImage(named: "ic_favorite_white")
@@ -389,7 +356,7 @@ class CardViewController: UIViewController , UIScrollViewDelegate{
         detailLabel.text = "Data-Driven Framework"
         detailLabel.textColor = MaterialColor.white
         detailLabel.numberOfLines = 0
-        cardView.detailLabel = detailLabel
+        cardView.detailView = detailLabel
         
         // Favorite button.
         let img1: UIImage? = UIImage(named: "ic_favorite_white")

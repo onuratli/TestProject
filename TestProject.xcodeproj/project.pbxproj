@@ -11,12 +11,15 @@
 		D70591F51C68B0EE0051CA67 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70591F41C68B0EE0051CA67 /* RulesViewController.swift */; };
 		D70591F71C68B37E0051CA67 /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70591F61C68B37E0051CA67 /* GiftViewController.swift */; };
 		D71F56AA1C68F81B0020E946 /* ClassicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F56A91C68F81B0020E946 /* ClassicViewController.swift */; };
-		D71F56AC1C68F8390020E946 /* GoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F56AB1C68F8390020E946 /* GoldViewController.swift */; };
 		D71F56AE1C68F93E0020E946 /* PlatinumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F56AD1C68F93E0020E946 /* PlatinumViewController.swift */; };
 		D71F56B01C68F9910020E946 /* BusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F56AF1C68F9910020E946 /* BusinessViewController.swift */; };
 		D72BF4E01C6CE2EF00E2EB96 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72BF4DF1C6CE2EF00E2EB96 /* CardType.swift */; };
+		D75896CD1C74D9D2007C960C /* GoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75896CC1C74D9D2007C960C /* GoldViewController.swift */; };
 		D75946791C7326A2005BEE4A /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75946781C7326A2005BEE4A /* ContactViewController.swift */; };
 		D759467B1C7328DF005BEE4A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D759467A1C7328DF005BEE4A /* MapKit.framework */; };
+		D75946821C7332F6005BEE4A /* AutoLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D759467F1C7332F6005BEE4A /* AutoLayoutHelper.m */; };
+		D75946831C7332F6005BEE4A /* ControlsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D75946811C7332F6005BEE4A /* ControlsHelper.m */; };
+		D7627EF41C7DED29002CBBC2 /* TableTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7627EF31C7DED29002CBBC2 /* TableTestViewController.swift */; };
 		D77D58491C64EF3200CBFBF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D58481C64EF3200CBFBF7 /* AppDelegate.swift */; };
 		D77D584B1C64EF3200CBFBF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D584A1C64EF3200CBFBF7 /* ViewController.swift */; };
 		D77D584E1C64EF3200CBFBF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77D584C1C64EF3200CBFBF7 /* Main.storyboard */; };
@@ -24,7 +27,12 @@
 		D77D58531C64EF3200CBFBF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77D58511C64EF3200CBFBF7 /* LaunchScreen.storyboard */; };
 		D77D585B1C64F1FE00CBFBF7 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D585A1C64F1FE00CBFBF7 /* LeftViewController.swift */; };
 		D77D585D1C64F20C00CBFBF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D585C1C64F20C00CBFBF7 /* HomeViewController.swift */; };
+		D77E4F411C7B413300EFBA07 /* ConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E4F401C7B413300EFBA07 /* ConditionsViewController.swift */; };
+		D77E4F451C7B465500EFBA07 /* source.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D77E4F441C7B465500EFBA07 /* source.rtf */; };
+		D7840EFB1C7B53F7005AD59F /* icerik.txt in Resources */ = {isa = PBXBuildFile; fileRef = D7840EFA1C7B53F7005AD59F /* icerik.txt */; };
 		D7CCC4E81C6A3F2E0012F42E /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CCC4E71C6A3F2E0012F42E /* CardViewController.swift */; };
+		D7D3C1651C775DD7004389AB /* gridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D3C1641C775DD7004389AB /* gridViewController.swift */; };
+		D7D6B9AB1C7DC74D00F0B60C /* mrzKartNedir.txt in Resources */ = {isa = PBXBuildFile; fileRef = D7D6B9AA1C7DC74D00F0B60C /* mrzKartNedir.txt */; };
 		E35C23061FFF1DDE8454BA43 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D24E2985E7B7A5AFB77F5F8 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,12 +43,18 @@
 		D70591F41C68B0EE0051CA67 /* RulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		D70591F61C68B37E0051CA67 /* GiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
 		D71F56A91C68F81B0020E946 /* ClassicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicViewController.swift; sourceTree = "<group>"; };
-		D71F56AB1C68F8390020E946 /* GoldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoldViewController.swift; sourceTree = "<group>"; };
 		D71F56AD1C68F93E0020E946 /* PlatinumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatinumViewController.swift; sourceTree = "<group>"; };
 		D71F56AF1C68F9910020E946 /* BusinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessViewController.swift; sourceTree = "<group>"; };
 		D72BF4DF1C6CE2EF00E2EB96 /* CardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
+		D75896CC1C74D9D2007C960C /* GoldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoldViewController.swift; sourceTree = "<group>"; };
 		D75946781C7326A2005BEE4A /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		D759467A1C7328DF005BEE4A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D759467C1C733108005BEE4A /* TestProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		D759467E1C7332F6005BEE4A /* AutoLayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutHelper.h; sourceTree = "<group>"; };
+		D759467F1C7332F6005BEE4A /* AutoLayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutHelper.m; sourceTree = "<group>"; };
+		D75946801C7332F6005BEE4A /* ControlsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlsHelper.h; sourceTree = "<group>"; };
+		D75946811C7332F6005BEE4A /* ControlsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlsHelper.m; sourceTree = "<group>"; };
+		D7627EF31C7DED29002CBBC2 /* TableTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableTestViewController.swift; sourceTree = "<group>"; };
 		D77D58451C64EF3200CBFBF7 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77D58481C64EF3200CBFBF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77D584A1C64EF3200CBFBF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +64,12 @@
 		D77D58541C64EF3200CBFBF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D77D585A1C64F1FE00CBFBF7 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		D77D585C1C64F20C00CBFBF7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D77E4F401C7B413300EFBA07 /* ConditionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionsViewController.swift; sourceTree = "<group>"; };
+		D77E4F441C7B465500EFBA07 /* source.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = source.rtf; sourceTree = "<group>"; };
+		D7840EFA1C7B53F7005AD59F /* icerik.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icerik.txt; sourceTree = "<group>"; };
 		D7CCC4E71C6A3F2E0012F42E /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		D7D3C1641C775DD7004389AB /* gridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gridViewController.swift; sourceTree = "<group>"; };
+		D7D6B9AA1C7DC74D00F0B60C /* mrzKartNedir.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mrzKartNedir.txt; sourceTree = "<group>"; };
 		FE6DE2BBB7D74353A201D150 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,10 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				D71F56A91C68F81B0020E946 /* ClassicViewController.swift */,
-				D71F56AB1C68F8390020E946 /* GoldViewController.swift */,
 				D71F56AD1C68F93E0020E946 /* PlatinumViewController.swift */,
 				D71F56AF1C68F9910020E946 /* BusinessViewController.swift */,
 				D7CCC4E71C6A3F2E0012F42E /* CardViewController.swift */,
+				D75896CC1C74D9D2007C960C /* GoldViewController.swift */,
 			);
 			name = CardTypesViewController;
 			sourceTree = "<group>";
@@ -103,6 +122,17 @@
 				D72BF4DF1C6CE2EF00E2EB96 /* CardType.swift */,
 			);
 			name = CardTypeStatics;
+			sourceTree = "<group>";
+		};
+		D759467D1C7332F6005BEE4A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D759467E1C7332F6005BEE4A /* AutoLayoutHelper.h */,
+				D759467F1C7332F6005BEE4A /* AutoLayoutHelper.m */,
+				D75946801C7332F6005BEE4A /* ControlsHelper.h */,
+				D75946811C7332F6005BEE4A /* ControlsHelper.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		D77D583C1C64EF3200CBFBF7 = {
@@ -134,12 +164,20 @@
 				D77D584F1C64EF3200CBFBF7 /* Assets.xcassets */,
 				D77D58511C64EF3200CBFBF7 /* LaunchScreen.storyboard */,
 				D77D58541C64EF3200CBFBF7 /* Info.plist */,
+				D759467D1C7332F6005BEE4A /* Utilities */,
 				D77D585A1C64F1FE00CBFBF7 /* LeftViewController.swift */,
 				D77D585C1C64F20C00CBFBF7 /* HomeViewController.swift */,
 				D70591F41C68B0EE0051CA67 /* RulesViewController.swift */,
+				D7D6B9AA1C7DC74D00F0B60C /* mrzKartNedir.txt */,
+				D7840EFA1C7B53F7005AD59F /* icerik.txt */,
 				D70591F61C68B37E0051CA67 /* GiftViewController.swift */,
 				D70271E31C68CCC000CC7C5D /* NotificationViewController.swift */,
 				D75946781C7326A2005BEE4A /* ContactViewController.swift */,
+				D77E4F441C7B465500EFBA07 /* source.rtf */,
+				D759467C1C733108005BEE4A /* TestProject-Bridging-Header.h */,
+				D7D3C1641C775DD7004389AB /* gridViewController.swift */,
+				D77E4F401C7B413300EFBA07 /* ConditionsViewController.swift */,
+				D7627EF31C7DED29002CBBC2 /* TableTestViewController.swift */,
 			);
 			path = TestProject;
 			sourceTree = "<group>";
@@ -205,7 +243,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7840EFB1C7B53F7005AD59F /* icerik.txt in Resources */,
+				D7D6B9AB1C7DC74D00F0B60C /* mrzKartNedir.txt in Resources */,
 				D77D58531C64EF3200CBFBF7 /* LaunchScreen.storyboard in Resources */,
+				D77E4F451C7B465500EFBA07 /* source.rtf in Resources */,
 				D77D58501C64EF3200CBFBF7 /* Assets.xcassets in Resources */,
 				D77D584E1C64EF3200CBFBF7 /* Main.storyboard in Resources */,
 			);
@@ -266,10 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D3C1651C775DD7004389AB /* gridViewController.swift in Sources */,
 				D70591F51C68B0EE0051CA67 /* RulesViewController.swift in Sources */,
 				D75946791C7326A2005BEE4A /* ContactViewController.swift in Sources */,
 				D77D585B1C64F1FE00CBFBF7 /* LeftViewController.swift in Sources */,
 				D71F56AE1C68F93E0020E946 /* PlatinumViewController.swift in Sources */,
+				D7627EF41C7DED29002CBBC2 /* TableTestViewController.swift in Sources */,
 				D77D584B1C64EF3200CBFBF7 /* ViewController.swift in Sources */,
 				D70271E41C68CCC000CC7C5D /* NotificationViewController.swift in Sources */,
 				D77D58491C64EF3200CBFBF7 /* AppDelegate.swift in Sources */,
@@ -277,9 +320,12 @@
 				D77D585D1C64F20C00CBFBF7 /* HomeViewController.swift in Sources */,
 				D7CCC4E81C6A3F2E0012F42E /* CardViewController.swift in Sources */,
 				D71F56AA1C68F81B0020E946 /* ClassicViewController.swift in Sources */,
+				D77E4F411C7B413300EFBA07 /* ConditionsViewController.swift in Sources */,
+				D75896CD1C74D9D2007C960C /* GoldViewController.swift in Sources */,
 				D71F56B01C68F9910020E946 /* BusinessViewController.swift in Sources */,
-				D71F56AC1C68F8390020E946 /* GoldViewController.swift in Sources */,
+				D75946821C7332F6005BEE4A /* AutoLayoutHelper.m in Sources */,
 				D72BF4E01C6CE2EF00E2EB96 /* CardType.swift in Sources */,
+				D75946831C7332F6005BEE4A /* ControlsHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +391,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestProject/TestProject-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -383,6 +430,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestProject/TestProject-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -392,7 +440,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE6DE2BBB7D74353A201D150 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				INFOPLIST_FILE = TestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = onur.TestProject;
@@ -404,7 +452,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 591D2E23A927CED84EAFF6BD /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				INFOPLIST_FILE = TestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = onur.TestProject;

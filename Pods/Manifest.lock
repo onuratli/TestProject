@@ -1,16 +1,24 @@
 PODS:
   - Alamofire (3.1.5)
-  - Material (1.30.2)
+  - Material (1.33.2)
+  - PureLayout (3.0.1)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
   - SlideMenuControllerSwift (2.0.5)
 
 DEPENDENCIES:
   - Alamofire (~> 3.1)
-  - Material (~> 1.30)
+  - Material (~> 1.33)
+  - PureLayout (~> 3.0)
+  - SDWebImage (~> 3.7)
   - SlideMenuControllerSwift (~> 2.0)
 
 SPEC CHECKSUMS:
   Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
-  Material: 0fab7c03df67f778716b0c1eed28c4d8562ccde3
+  Material: 8b6a82a8aaca9255a18ef1fa6a83ce44f800b87c
+  PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SlideMenuControllerSwift: 9dcae36265e14c4f42e729f212463beb60d2cf96
 
 COCOAPODS: 0.39.0

@@ -12,11 +12,11 @@ class ClassicViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        menuButton = UIButton()
-        menuButton?.frame = CGRect(x: 10, y: 70, width: self.view.frame.width, height: 30)
-        menuButton?.setTitle("CLASSIC Kart", forState: UIControlState.Normal)
-        self.view.addSubview(menuButton!)
+//
+//        menuButton = UIButton()
+//        menuButton?.frame = CGRect(x: 10, y: 70, width: self.view.frame.width, height: 30)
+//        menuButton?.setTitle("CLASSIC Kart", forState: UIControlState.Normal)
+//        self.view.addSubview(menuButton!)
         self.view.backgroundColor = UIColor.brownColor()
     }
 

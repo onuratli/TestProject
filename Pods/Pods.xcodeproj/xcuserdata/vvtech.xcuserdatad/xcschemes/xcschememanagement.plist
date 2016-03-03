@@ -19,6 +19,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PureLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SlideMenuControllerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>11A088C0ED2A42438C7F52304CB7B506</key>
+		<key>0E307EA0C464509622032D9C66D2A8F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3632EB1FD98F8B6C0711DFB8B9A7538A</key>
+		<key>2F85309811486BB0677821A544F50254</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,7 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>822EC067062F6B86A9468B7BBBE5AAE3</key>
+		<key>5F2BF2A03BFFACAE2A3046241552995D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>61C0590968BEF28EDA1C5EB7D26C1E06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FEBA72F0F2DFC8A01712FCB1D2080D48</key>
 		<dict>
 			<key>primary</key>
 			<true/>

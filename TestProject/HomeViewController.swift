@@ -17,54 +17,29 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.redColor()
-        let menuImage = UIImage(named: "hamburger")
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: menuImage, style: UIBarButtonItemStyle.Plain, target: slideMenuController(), action: "openLeft")
-        
-        //self.navigationItem.title = "HOme Title"
-        menuButton = UIButton()
-        menuButton?.frame = CGRect(x: 10, y: 70, width: self.view.frame.width, height: 30)
-        menuButton?.setTitle("Menüyü aç", forState: UIControlState.Normal)
+        let menuImage = UIImage(named: "burgericon2")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: menuImage, style: UIBarButtonItemStyle.Done, target: slideMenuController(), action: "openLeft")
 
-        getViewButton = UIButton()
-        getViewButton?.frame = CGRect(x: 10, y: 200, width: self.view.frame.width, height: 30)
-        getViewButton?.setTitle("İkinc", forState: UIControlState.Normal)
-        getViewButton?.addTarget(self, action: "getAnotherView", forControlEvents: UIControlEvents.TouchUpInside)
+        self.navigationItem.title = "Mrz Kart Nedir ?"
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "background")?.drawInRect(self.view.bounds)
         
-        self.view.addSubview(getViewButton!)
+        var image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
         
+        UIGraphicsEndImageContext()
         
-        // buradaki openLeft indirdiğimiz slideMenuController'ın bir fonksiyonu, bu dökümanlarında varmış. bu standart bir kullanım bu eklenti/kütüphane için. mantık olarak openLeft metodunu çalıştırıyor.
+        self.view.backgroundColor = UIColor(patternImage: image)
+        //self.view.backgroundColor = UIColor.whiteColor()
+        textField()
         
-        menuButton?.addTarget(slideMenuController(), action: "openLeft", forControlEvents: UIControlEvents.TouchUpInside)
-        self.view.addSubview(menuButton!)
-        
-        
-        
-        
-//        var height:CGFloat = 100
-//
-//        for var index = 0; index < 50; ++index {
-//        
-//            testButton = UIButton()
-//            testButton?.frame = CGRect(x: 10, y: height, width: self.view.frame.width, height: 30)
-//            testButton?.setTitle("selam aç", forState: UIControlState.Normal)
-//            self.view.addSubview(testButton!)
-//            
-//            height += 200
-//
-//        }
-//        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        // Do any additional setup after loading the view.
+         let navigationBgColor = UIColor(red: 59, green: 175, blue: 218)
+        navigationController!.navigationBar.barTintColor = navigationBgColor
+
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+    
+    
+    
     }
     
     func getAnotherView() {
@@ -78,6 +53,24 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textField() {
+        let textView = UITextView(frame: CGRectMake(10, 80, self.view.frame.width-20, self.view.frame.height-200))
+        textView.textAlignment = NSTextAlignment.Center
+        textView.textColor = UIColor.blackColor()
+        textView.backgroundColor = UIColor.clearColor()
+        textView.text = read()
+        textView.font = UIFont(name: "KannadaSangamMN", size: 15)
+        
+        self.view.addSubview(textView)
+    }
+    
+    
+    func read() -> String
+    {
+        let myFileURL = NSBundle.mainBundle().URLForResource("mrzKartNedir", withExtension: "txt")!
+        let myText = try! String(contentsOfURL: myFileURL, encoding: NSUTF8StringEncoding)
+        return myText
+    }
 
     /*
     // MARK: - Navigation
@@ -90,3 +83,5 @@ class HomeViewController: UIViewController {
     */
 
 }
+
+

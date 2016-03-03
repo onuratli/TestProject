@@ -12,6 +12,12 @@ class LeftViewController: UIViewController {
 
     var menutableView: UITableView = UITableView()
     var menuItems:[String] = ["MrzKart Nedir ?" , "Kurallar", "Hediyeler","Başvuru" , "Katılım Koşulları" ,"İletişim"]
+//    var iconArray: [UIImage] = [UIImage(named: "home")!, UIImage(named: "mail")!,UIImage(named: "phone")!, UIImage(named: "printer")!, UIImage(named: "printer")!, UIImage(named: "printer")!, UIImage(named: "printer")!, UIImage(named: "printer")!]
+    var iconArray: [UIImage] = [UIImage(named: "user")!
+        , UIImage(named: "kural")!
+        ,UIImage(named: "gift")!
+        , UIImage(named: "pen")!
+        , UIImage(named: "wallet")!, UIImage(named: "mail")!]
     var homeViewController = HomeViewController()
     override func viewDidLoad() {
         
@@ -35,8 +41,14 @@ class LeftViewController: UIViewController {
         var image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
         
         UIGraphicsEndImageContext()
+
         
-        self.view.backgroundColor = UIColor(patternImage: image)
+        
+        let newSwiftColor = UIColor(red: 56, green: 61, blue: 67)
+        
+        
+        
+        self.view.backgroundColor = newSwiftColor
         
         // Do any additional setup after loading the view.
     }
@@ -45,6 +57,8 @@ class LeftViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    
     
 
     /*
@@ -76,8 +90,20 @@ extension LeftViewController:UITableViewDataSource, UITableViewDelegate
         let menu:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
         menu.textLabel?.text = menuItems[indexPath.row]
         menu.backgroundColor = UIColor.clearColor()
-    
+        menu.textLabel?.color(UIColor.whiteColor())
+        
+        menu.imageView?.image = imageWithImage(iconArray[indexPath.row]
+, scaledToSize: CGSize(width: 25, height: 25))
         return menu
+    }
+    
+    func imageWithImage(image:UIImage,scaledToSize newSize:CGSize)->UIImage{
+        
+        UIGraphicsBeginImageContext( newSize )
+        image.drawInRect(CGRect(x: 0,y: 0,width: newSize.width,height: newSize.height))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -89,17 +115,19 @@ extension LeftViewController:UITableViewDataSource, UITableViewDelegate
         switch selectedIndex {
         
         case "0":
-            vc = ViewController()
+            vc = HomeViewController()
         case "1":
             vc = RulesViewController()
         case "2":
             vc = GiftViewController()
         case "3":
-            self.presentViewController(CardViewController(), animated: true, completion: nil)
+            vc = HomeViewController()
+            case "4":
+            vc = ConditionsViewController()
         case "5":
-            self.presentViewController(ContactViewController(), animated: true, completion: nil)
+            vc = ContactViewController()
         default:
-            self.presentViewController(CardViewController(), animated: true, completion: nil)
+            self.presentViewController(gridViewController(), animated: true, completion: nil)
         }
         
         let nc = UINavigationController(rootViewController: vc)
@@ -109,4 +137,16 @@ extension LeftViewController:UITableViewDataSource, UITableViewDelegate
         
         }
     
+}
+
+extension UIColor
+{
+    convenience init(red: Int, green: Int, blue: Int)
+    {
+        let newRed = CGFloat(red)/255
+        let newGreen = CGFloat(green)/255
+        let newBlue = CGFloat(blue)/255
+        
+        self.init(red: newRed, green: newGreen, blue: newBlue, alpha: 0.9)
+    }
 }
